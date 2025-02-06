@@ -1,0 +1,18 @@
+package INTERFACESEGREGATIONPRINCIPLE;
+
+public class PizzaClient implements PizzaAppInterfaceOffline {
+
+//1>Method()--1
+  public void acceptOrderOffine() {
+
+  }
+  //2>Method()--2
+  public void acceptOnlyCash() {
+
+  }
+}
+//NOTE:-Here client don't want to accept order via telephone
+// but is forced to perform unnecessary functions..
+//violating I-Integration Segregation Principle.
+//so btter create new Interface and implement methods/functions() as per the need.
+//create interface PizzaAppInterfaceOnline for implementing online order and so on....
